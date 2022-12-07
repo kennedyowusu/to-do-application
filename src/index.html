@@ -4,11 +4,53 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Wbpack Exercise</title>
+ <title>Todo Application</title>
+
+ <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 </head>
 
 <body>
- <h1>Hello webpack!</h1>
+ <main class="main-container">
+  
+  <div class="top-section">
+   <h2 class="todo-title">Today's To Do</h2>
+   <button class="todo-button">
+    <i class="material-icons">sync</i>
+   </button>
+  </div>
+  
+
+  <form class="todo-form">
+   <input type="text" name="todo" placeholder="Add to your list...">
+   <button class="subdirectory-arrow-left">
+    <span class="material-icons">
+     subdirectory_arrow_left
+    </span>
+   </button>
+  </form>
+
+  <ul class="todo-list">
+   <li class="todo-item">
+    
+    <div class="box-list-more">
+     <input type="checkbox" name="todo" class="todo-checkbox" id="todoCheckbox">
+     <p class="todo-description">Go to Library</p>
+
+     <button class="more_vert">
+      <span class="material-icons">
+       more_vert
+      </span>
+     </button>
+    </div>
+   
+   </li>
+     <hr class="divider">
+  </ul>
+
+  <div class="bottom-section">
+   <button type="submit" class="clear-completed">Clear all completed</button>
+  </div>
+ </main>
 </body>
 
 </html>

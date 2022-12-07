@@ -9,11 +9,6 @@ module.exports = {
   devServer: {
     static: './dist',
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/index.html',
-    }),
-  ],
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
@@ -28,4 +23,9 @@ module.exports = {
       use: ['style-loader', 'css-loader'],
     }],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+    }),
+  ],
 };

@@ -79,7 +79,7 @@ h3 {
   top: 50%;
   transform: translate(-50%, -50%);
   background: #fff;
-  border-radius: 10x;
+  border-radius: 10px;
   box-shadow: 0 0 6px 4px #d0d0d0;
 }
 
@@ -103,7 +103,9 @@ h3 {
   cursor: pointer;
 }
 
-.todo-title, .todo-list, .top-section {
+.todo-title,
+.todo-list,
+.top-section {
   display: flex;
   width: 100%;
 }
@@ -117,7 +119,8 @@ h3 {
   color: rgb(0, 0, 0, 0.7);
 }
 
-.top-section, .todo-form {
+.top-section,
+.todo-form {
   border-bottom: 1px solid #d0d0d0;
 }
 

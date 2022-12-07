@@ -73,7 +73,7 @@ h3 {
 
 .main-container {
   width: 44vw;
-  height: 59vh;
+  height: 56vh;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -222,7 +222,7 @@ input[type="text"]:focus {
 .bottom-section {
   height: 10%;
   padding: 30px 20px;
-  margin-top: 26%;
+  margin-top: 2.5%;
   background: #d3d3d3;
 }
 

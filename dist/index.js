@@ -6,7 +6,8 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-(self["webpackChunkto_do_application_webpack"] = self["webpackChunkto_do_application_webpack"] || []).push([["index"],{
+/******/ (() => { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
 
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/style.css":
 /*!*************************************************************!*\
@@ -15,7 +16,7 @@
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"body {\\n    background-color: bisque;\\n}\\n\\n.hello {\\n  color: red;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://to-do-application-webpack/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n___CSS_LOADER_EXPORT___.push([module.id, \"@import url(https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@400;500;600;700;800&display=swap);\"]);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \":root {\\n  --navbar-color: #3c3a39;\\n  --hero-color: #1c1a19;\\n  --orange-color: #ff6b00;\\n  --semi-white-color: #fff5e1;\\n  --white-color: #fff;\\n  --black-color: #000;\\n  --border: 0.1rem solid rgba(255, 255, 255, 0.3);\\n  --border-radius: 0.5rem;\\n  --box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);\\n  --transition: all 0.03s linear;\\n  --spacing: 0.3rem;\\n  --light-spacing: 0.5rem;\\n  --max-width: 1440px;\\n}\\n\\n* {\\n  outline: none;\\n  border: none;\\n  text-decoration: none;\\n  transition: 0.3s linear;\\n  margin: 0;\\n  padding: 0;\\n  box-sizing: border-box;\\n  list-style: none;\\n}\\n\\nhtml {\\n  font-size: 50%;\\n  overflow-x: hidden;\\n  scroll-padding-top: 9rem;\\n  scroll-behavior: smooth;\\n}\\n\\nhtml::-webkit-scrollbar {\\n  width: 0.8rem;\\n}\\n\\nhtml::-webkit-scrollbar-track {\\n  background-color: transparent;\\n}\\n\\nhtml::-webkit-scrollbar-thumb {\\n  background-color: #fff;\\n  border-radius: 5rem;\\n}\\n\\nbody {\\n  font-family: 'Poppins', sans-serif;\\n  background: #f2f2f2;\\n  color: var(--black-color);\\n}\\n\\na {\\n  font-family: inherit;\\n  color: inherit;\\n  font-size: inherit;\\n}\\n\\nh1 {\\n  font-size: 3rem;\\n}\\n\\nh2 {\\n  font-size: 2.5rem;\\n}\\n\\nh3 {\\n  font-size: 2rem;\\n}\\n\\n.card {\\n  transform: translate(60%, 50%);\\n  background: #fff;\\n  border-radius: 2px;\\n  box-shadow: 0 0 6px 4px #d0d0d0;\\n  display: flex;\\n  flex-direction: column;\\n  width: 44vw;\\n  height: 56vh;\\n  left: 50%;\\n  top: 50%;\\n}\\n\\n.card-body {\\n  width: 50%;\\n  height: 100%;\\n  display: flex;\\n  flex-direction: column;\\n}\\n\\n.top-section {\\n  width: 44vw;\\n  height: 10%;\\n  display: flex;\\n  justify-content: space-between;\\n  align-items: center;\\n  padding: 30px 20px;\\n  border-bottom: 1px solid #d0d0d0;\\n}\\n\\n.card-title {\\n  height: 10%;\\n  display: flex;\\n  justify-content: flex-start;\\n  align-items: center;\\n  font-size: 2rem;\\n  font-weight: 600;\\n  color: rgb(0, 0, 0, 0.7);\\n}\\n\\n.todo-button {\\n  width: 30px;\\n  height: 30px;\\n  border-radius: 50%;\\n  background: #fff;\\n  color: rgb(0, 0, 0, 0.4);\\n  font-size: 1.5rem;\\n  display: flex;\\n  justify-content: center;\\n  align-items: center;\\n  cursor: pointer;\\n}\\n\\n.todo-form {\\n  width: 44vw;\\n  height: 10%;\\n  display: flex;\\n  justify-content: space-between;\\n  align-items: center;\\n  padding: 30px 20px;\\n  border-bottom: 1px solid #d0d0d0;\\n}\\n\\ninput[type=\\\"text\\\"] {\\n  color: #000;\\n  font-style: italic;\\n  font-size: 1.8rem;\\n  border: none;\\n  outline: none;\\n  width: 80%;\\n}\\n\\ninput[type=\\\"text\\\"]:focus {\\n  border: none;\\n  outline: none;\\n}\\n\\n.subdirectory-arrow-left {\\n  width: 30px;\\n  height: 30px;\\n  border-radius: 50%;\\n  background: #fff;\\n  color: rgb(0, 0, 0, 0.4);\\n  font-size: 1.5rem;\\n  display: flex;\\n  justify-content: center;\\n  align-items: center;\\n  cursor: pointer;\\n}\\n\\n.each-todo-item {\\n  width: 44vw;\\n  height: 12%;\\n  display: flex;\\n  justify-content: space-between;\\n  align-items: center;\\n  padding-left: 20px;\\n  padding-bottom: 30px;\\n  padding-top: 30px;\\n  border-bottom: 1px solid #d0d0d0;\\n}\\n\\n.todo-description {\\n  width: 90%;\\n  height: 100%;\\n  display: flex;\\n  align-items: center;\\n  font-size: 1.8rem;\\n  color: rgb(0, 0, 0, 0.7);\\n  padding-left: 20px;\\n}\\n\\n.more_vert {\\n  background: #fff;\\n  color: rgb(0, 0, 0, 0.4);\\n  font-size: 1.5rem;\\n  margin-right: 20px;\\n}\\n\\n.btn {\\n  width: 100%;\\n  height: 20%;\\n  display: flex;\\n  justify-content: center;\\n  align-items: center;\\n  font-size: 2rem;\\n  color: rgb(0, 0, 0, 0.7);\\n}\\n\\n.card-footer {\\n  width: 100%;\\n  height: 20%;\\n  margin-top: -69px;\\n  display: flex;\\n  justify-content: center;\\n  align-items: center;\\n  font-size: 2rem;\\n  color: rgb(0, 0, 0, 0.7);\\n  background: #f2f2f2;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://to-do-application-webpack/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -135,13 +136,112 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n\nfunction component() {\n  const element = document.createElement('div');\n  // Lodash, now imported by this script\n  element.innerHTML = lodash__WEBPACK_IMPORTED_MODULE_0___default().join(['Hello', 'webpack'], ' ');\n  element.classList.add('hello');\n\n  return element;\n}\n\ndocument.body.appendChild(component());\n\n//# sourceURL=webpack://to-do-application-webpack/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* eslint-disable no-unused-vars */\n\n\n\nconst uiData = [\n  {\n    description: 'Buy Groceries',\n    completed: false,\n    index: 1,\n  },\n\n  {\n    description: 'Go to the Library',\n    completed: true,\n    index: 2,\n  },\n\n  {\n    description: 'Attend a Church Service',\n    completed: true,\n    index: 3,\n  },\n\n];\n\nconst renderUIData = uiData.forEach((item) => {\n  const { description, completed, index } = item;\n\n  const dataPlaceHolder = `\n  <li class=\"each-todo-item\" id=${index} item=${completed}>\n      <input type=\"checkbox\" name=\"todo-item\" id=\"todo-item\">\n      <label for=\"todo-item\" class=\"todo-description\">${description}</label>\n      <button type=\"submit\" class=\"more_vert\">\n      <i class=\"material-icons\">more_vert</i>\n      </button>\n    </li>\n  `;\n\n  document.querySelector('.todo-container').innerHTML += dataPlaceHolder;\n});\n\nwindow.onload = renderUIData;\n\n//# sourceURL=webpack://to-do-application-webpack/./src/index.js?");
 
 /***/ })
 
-},
-/******/ __webpack_require__ => { // webpackRuntimeModules
-/******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-/******/ var __webpack_exports__ = (__webpack_exec__("./src/index.js"));
-/******/ }
-]);
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			id: moduleId,
+/******/ 			loaded: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Flag the module as loaded
+/******/ 		module.loaded = true;
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/node module decorator */
+/******/ 	(() => {
+/******/ 		__webpack_require__.nmd = (module) => {
+/******/ 			module.paths = [];
+/******/ 			if (!module.children) module.children = [];
+/******/ 			return module;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/nonce */
+/******/ 	(() => {
+/******/ 		__webpack_require__.nc = undefined;
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
+/******/ 	
+/******/ })()
+;

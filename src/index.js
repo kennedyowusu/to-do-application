@@ -21,8 +21,6 @@ const uiData = [
     index: 3,
   },
 
- 
-
 ];
 
 const renderUIData = uiData.forEach((item) => {

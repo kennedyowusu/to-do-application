@@ -6,10 +6,6 @@ const inputTaskFormField = document.getElementById('inputTaskFormField');
 
 const taskTodoHolder = document.getElementById('taskTodoHolder');
 
-const moreVert = document.querySelectorAll('.more_vert');
-
-const deleteUserTaskFromList = moreVert;
-
 let taskArray = [];
 
 const addUserTaskList = () => {
@@ -43,6 +39,10 @@ const sendUserTaskToLocalStorage = () => {
     // document.querySelector('.todo-container').innerHTML += dataPlaceHolder;
     inputTaskFormField.value = '';
   });
+
+  const moreVert = document.querySelectorAll('.more_vert');
+
+  const deleteUserTaskFromList = moreVert;
 
   deleteUserTaskFromList.forEach((element) => {
     element.addEventListener('click', () => {

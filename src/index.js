@@ -21,17 +21,7 @@ const uiData = [
     index: 3,
   },
 
-  {
-    description: 'Watch a Movie',
-    completed: true,
-    index: 4,
-  },
-  
-  {
-    description: 'Mow the Lawn',
-    completed: true,
-    index: 5,
-  },
+ 
 
 ];
 

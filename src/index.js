@@ -11,9 +11,10 @@ let taskArray = [];
 
 const addUserTaskList = () => {
   const taskEmptyObject = {};
+  taskEmptyObject.index = taskArray.length + 1;
   taskEmptyObject.description = inputTaskFormField.value;
   taskEmptyObject.completed = false;
-  taskEmptyObject.index = taskArray.length + 1;
+
   taskArray.push(taskEmptyObject);
 };
 
@@ -60,7 +61,9 @@ const sendUserTaskToLocalStorage = () => {
     });
   });
 
-  const userTaskDetails = document.querySelectorAll('input-from-user');
+  const userTask = document.querySelectorAll('input-from-user');
+  const userTaskDetails = userTask;
+
   userTaskDetails.forEach((inputDesc) => {
     inputDesc.addEventListener('focusout', () => {
       const inputDescId = taskArray.findIndex((isDesc) => isDesc.index === parseInt(inputDesc.dataset.id, 10));

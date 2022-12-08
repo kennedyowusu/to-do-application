@@ -173,7 +173,7 @@ input[type="text"]:focus {
   border-bottom: 1px solid #d0d0d0;
 }
 
-.todo-description {
+#todoDescription {
   width: 90%;
   height: 100%;
   display: flex;

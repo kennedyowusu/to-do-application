@@ -1,5 +1,4 @@
-/* eslint-disable no-unused-vars */
-import _ from 'lodash';
+import 'lodash';
 import './style.css';
 
 const uiData = [

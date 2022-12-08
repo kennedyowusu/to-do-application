@@ -18,30 +18,37 @@ const uiData = [
   {
     description: 'Attend a Church Service',
     completed: true,
+    index: 3,
+  },
+
+  {
+    description: 'Watch a Movie',
+    completed: true,
     index: 4,
   },
+  
+  {
+    description: 'Mow the Lawn',
+    completed: true,
+    index: 5,
+  },
+
 ];
 
 const renderUIData = uiData.forEach((item) => {
   const { description, completed, index } = item;
 
   const dataPlaceHolder = `
-    <li class="todo-item" id=${index} item=${completed} >
-      <div class="box-list-more">
-        <input type="checkbox" name="todo" class="todo-checkbox" id="todoCheckbox">
-        <p class="todo-description">${description}</p>
-        <button class="more_vert">
-        <span class="material-icons">
-        more_vert
-        </span>
+  <li class="each-todo-item" id=${index} item=${completed}>
+      <input type="checkbox" name="todo-item" id="todo-item">
+      <label for="todo-item" class="todo-description">${description}</label>
+      <button type="submit" class="more_vert">
+      <i class="material-icons">more_vert</i>
       </button>
-      
-    </div>
-    
-  </li>
-  <hr class="divider" />
+    </li>
   `;
-  document.querySelector('.todo-list').innerHTML += dataPlaceHolder;
+
+  document.querySelector('.todo-container').innerHTML += dataPlaceHolder;
 });
 
 window.onload = renderUIData;

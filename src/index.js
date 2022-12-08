@@ -39,4 +39,5 @@ const renderUIData = uiData.forEach((item) => {
   document.querySelector('.todo-container').innerHTML += dataPlaceHolder;
 });
 
-window.onload = renderUIData;
+// window.onload = renderUIData;
+window.addEventListener('load', renderUIData);

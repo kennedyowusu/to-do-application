@@ -23,13 +23,13 @@ const saveUserTaskToLocalStorage = () => {
 const sendUserTaskToLocalStorage = () => {
   taskTodoHolder.innerHTML = '';
   taskArray.forEach((item) => {
-    const { description, completed, index } = item;
+    const { description, index } = item;
 
     const dataPlaceHolder = `
-    <li class="each-todo-item" id=${index} item=${completed}>
-        <input type="checkbox" name="todo-item" id="todo-item" data-id=${index} class="input-from-user">
-        <label for="todo-item" class="todo-description">${description}</label>
-        <button type="submit" class="more_vert" data-id=${index}>
+    <li class="each-todo-item">
+        <input type="checkbox">
+        <label for="todo-item" id="todoDescription" class="input-from-user">${description}</label>
+        <button type="submit" class="more_vert" data-id="${index}">
         <i class="material-icons">more_vert</i>
         </button>
       </li>

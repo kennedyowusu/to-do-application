@@ -23,7 +23,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: path.resolve(__dirname, 'src/index.html'),
       filename: 'index.html',
     }),
   ],
@@ -34,5 +34,8 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
     ],
+  },
+  optimization: {
+    runtimeChunk: 'single',
   },
 };

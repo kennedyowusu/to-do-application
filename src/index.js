@@ -1,3 +1,5 @@
+// eslint-disable-next-line import/no-extraneous-dependencies, no-unused-vars
+import _ from 'lodash';
 import './style.css';
 
 const uiData = [

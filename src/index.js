@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 // eslint-disable-next-line import/no-extraneous-dependencies, no-unused-vars
 // import _ from 'lodash';
 import './style.css';
@@ -46,11 +47,11 @@ const sendUserTaskToLocalStorage = () => {
 
   deleteUserTaskFromList.forEach((element) => {
     element.addEventListener('click', () => {
-      const elementIndex = taskArray.findIndex((taskz) => taskz.index === element.dataset.id);
+      const elementIndex = taskArray.findIndex((isTask) => isTask.index === parseInt(element.dataset.id, 10));
       const alreadyRemovedUserTask = (uniqueId) => {
         taskArray.splice(uniqueId, 1);
-        for (let index = 0; index < taskArray.length; index += 1) {
-          taskArray[index] = index + 1;
+        for (let i = 0; i < taskArray.length; i += 1) {
+          taskArray[i].index = i + 1;
         }
         saveUserTaskToLocalStorage();
         localStorage.setItem('taskArray', JSON.stringify(taskArray));
@@ -62,7 +63,7 @@ const sendUserTaskToLocalStorage = () => {
   const userTaskDetails = document.querySelectorAll('input-from-user');
   userTaskDetails.forEach((inputDesc) => {
     inputDesc.addEventListener('focusout', () => {
-      const inputDescId = taskArray.findIndex((taskz) => taskz.index === inputDesc.dataset.id);
+      const inputDescId = taskArray.findIndex((isDesc) => isDesc.index === parseInt(inputDesc.dataset.id, 10));
       taskArray[inputDescId].description = inputDesc.value;
       const updateUserExistingTask = () => {
         sendUserTaskToLocalStorage();

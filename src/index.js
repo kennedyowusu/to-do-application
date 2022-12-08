@@ -1,4 +1,3 @@
-import 'lodash';
 import './style.css';
 
 const uiData = [

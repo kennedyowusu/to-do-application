@@ -10,27 +10,6 @@ const moreVert = document.querySelectorAll('.more_vert');
 
 const deleteUserTaskFromList = moreVert;
 
-// const uiData = [
-//   {
-//     description: 'Buy Groceries',
-//     completed: false,
-//     index: 1,
-//   },
-
-//   {
-//     description: 'Go to the Library',
-//     completed: true,
-//     index: 2,
-//   },
-
-//   {
-//     description: 'Attend a Church Service',
-//     completed: true,
-//     index: 3,
-//   },
-
-// ];
-
 let taskArray = [];
 
 const addUserTaskList = () => {
@@ -45,22 +24,6 @@ const saveUserTaskToLocalStorage = () => {
   localStorage.setItem('taskArray', JSON.stringify(taskArray));
 };
 
-// const renderUIData = uiData.forEach((item) => {
-//   const { description, status, index } = item;
-
-//   const dataPlaceHolder = `
-//   <li class="each-todo-item" id=${index} item=${status}>
-//       <input type="checkbox" name="todo-item" id="todo-item">
-//       <label for="todo-item" class="todo-description">${description}</label>
-//       <button type="submit" class="more_vert">
-//       <i class="material-icons">more_vert</i>
-//       </button>
-//     </li>
-//   `;
-
-//   document.querySelector('.todo-container').innerHTML += dataPlaceHolder;
-// });
-
 const sendUserTaskToLocalStorage = () => {
   taskTodoHolder.innerHTML = '';
   taskArray.forEach((item) => {
@@ -70,7 +33,7 @@ const sendUserTaskToLocalStorage = () => {
     <li class="each-todo-item" id=${index} item=${status}>
         <input type="checkbox" name="todo-item" id="todo-item" data-id=${index} class="input-from-user">
         <label for="todo-item" class="todo-description">${description}</label>
-        <button type="submit" class="more_vert">
+        <button type="submit" class="more_vert" data-id=${index}>
         <i class="material-icons">more_vert</i>
         </button>
       </li>

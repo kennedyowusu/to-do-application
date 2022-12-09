@@ -7,8 +7,24 @@ const inputTaskFormField = document.getElementById('inputTaskFormField');
 
 const taskTodoHolder = document.getElementById('taskTodoHolder');
 
+const clearAllCompleted = document.querySelector('.clear-all-completed');
+
 const saveUserTaskToLocalStorage = (taskArray) => {
   localStorage.setItem('taskArray', JSON.stringify(taskArray));
+};
+
+// Check the status of the checkbox
+const isCheckBoxChecked = (taskArray) => {
+  const checkBox = document.querySelectorAll('input[type="checkbox"]');
+  const checkBoxArray = Array.from(checkBox);
+  checkBoxArray.forEach((item, index) => {
+    if (item.checked) {
+      taskArray[index].completed = true;
+    } else {
+      taskArray[index].completed = false;
+    }
+  });
+  saveUserTaskToLocalStorage(taskArray);
 };
 
 const generateUI = (taskArray) => {
@@ -93,3 +109,5 @@ inputTaskFormField.addEventListener('keypress', (event) => {
     saveUserTaskToLocalStorage(retrievedTasks);
   }
 });
+
+

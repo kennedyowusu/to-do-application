@@ -7,7 +7,7 @@ const inputTaskFormField = document.getElementById('inputTaskFormField');
 
 const taskTodoHolder = document.getElementById('taskTodoHolder');
 
-const clearAllCompleted = document.querySelector('.clear-all-completed');
+// const clearAllCompleted = document.querySelector('.clear-all-completed');
 
 const saveUserTaskToLocalStorage = (taskArray) => {
   localStorage.setItem('taskArray', JSON.stringify(taskArray));
@@ -117,5 +117,3 @@ inputTaskFormField.addEventListener('keypress', (event) => {
     saveUserTaskToLocalStorage(retrievedTasks);
   }
 });
-
-

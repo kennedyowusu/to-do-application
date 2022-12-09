@@ -7,7 +7,7 @@ const inputTaskFormField = document.getElementById('inputTaskFormField');
 
 const taskTodoHolder = document.getElementById('taskTodoHolder');
 
-// const clearAllCompleted = document.querySelector('.clear-all-completed');
+const clearAllCompleted = document.querySelector('.clear-all-completed');
 
 const saveUserTaskToLocalStorage = (taskArray) => {
   localStorage.setItem('taskArray', JSON.stringify(taskArray));
@@ -15,7 +15,7 @@ const saveUserTaskToLocalStorage = (taskArray) => {
 
 // Check the status of the checkbox
 const isCheckBoxChecked = (taskArray) => {
-  const checkBox = document.querySelectorAll('input[type="checkbox"]');
+  const checkBox = document.querySelectorAll('checkBox');
   const checkBoxArray = Array.from(checkBox);
   checkBoxArray.forEach((item, index) => {
     if (item.checked) {
@@ -37,7 +37,7 @@ const generateUI = (taskArray) => {
 
     const dataPlaceHolder = `
     <li class="each-todo-item">
-        <input type="checkbox">
+        <input type="checkbox" id="checkBox" class="toggle-checkbox" data-id="${index}">
         <label for="todo-item" id="todoDescription" class="input-from-user">${description}</label>
         <button type="submit" class="more_vert" data-id="${index}">
         <i class="material-icons">more_vert</i>
@@ -81,13 +81,37 @@ const generateUI = (taskArray) => {
     });
   });
 
-  const checkBox = document.querySelectorAll('input[type="checkbox"]');
+  const checkBox = document.querySelectorAll('.toggle-checkbox');
 
   checkBox.forEach((item) => {
-    item.addEventListener('change', () => {
-      isCheckBoxChecked(taskArray);
+    item.addEventListener('change', (event) => {
+      if (event.target.checked) {
+        const dataSetId = parseInt(item.dataset.id, 10);
+        const checkBoxId = taskArray.findIndex((isTask) => isTask.index === dataSetId);
+        taskArray[checkBoxId].completed = true;
+        // isCheckBoxChecked(taskArray);
+        saveUserTaskToLocalStorage(taskArray);
+      } else {
+        const dataSetId = parseInt(item.dataset.id, 10);
+        const checkBoxId = taskArray.findIndex((isTask) => isTask.index === dataSetId);
+        taskArray[checkBoxId].completed = false;
+        // isCheckBoxChecked(taskArray);
+        saveUserTaskToLocalStorage(taskArray);
+      }
     });
-  }, false);
+  });
+
+  // checkBox.forEach((item) => {
+  //   item.addEventListener('change', () => {
+  //     isCheckBoxChecked(taskArray);
+  //   });
+  // }, false);
+
+  clearAllCompleted.addEventListener('click', () => {
+    const completedTask = taskArray.filter((item) => item.completed === false);
+    generateUI(completedTask);
+    saveUserTaskToLocalStorage(completedTask);
+  });
 };
 
 const retrieveUserSavedTaskFromLocalStorage = () => {

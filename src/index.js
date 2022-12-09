@@ -86,16 +86,12 @@ const generateUI = (taskArray) => {
   checkBox.forEach((item) => {
     item.addEventListener('change', (event) => {
       if (event.target.checked) {
-        const dataSetId = parseInt(item.dataset.id, 10);
-        const checkBoxId = taskArray.findIndex((isTask) => isTask.index === dataSetId);
+        const checkBoxId = taskArray.findIndex((isTask) => isTask.index === parseInt(item.dataset.id, 10));
         taskArray[checkBoxId].completed = true;
-        // isCheckBoxChecked(taskArray);
         saveUserTaskToLocalStorage(taskArray);
       } else {
-        const dataSetId = parseInt(item.dataset.id, 10);
-        const checkBoxId = taskArray.findIndex((isTask) => isTask.index === dataSetId);
+        const checkBoxId = taskArray.findIndex((isTask) => isTask.index === parseInt(item.dataset.id, 10));
         taskArray[checkBoxId].completed = false;
-        // isCheckBoxChecked(taskArray);
         saveUserTaskToLocalStorage(taskArray);
       }
     });

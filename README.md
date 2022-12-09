@@ -21,8 +21,9 @@ REQUIRED SECTIONS:
 
 > Describe your project in 1 or 2 sentences.
 
-**[Todo Application]** is a basic website built using webpack
+**[Todo Application]** 
 
+> "To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.
 ## 🛠 Built With <a name="built-with">
 
 Html
@@ -207,7 +208,7 @@ Feel free to check the [issues page]((https://github.com/kennedyowusu/to-do-appl
 
 > Write a message to encourage readers to support your project
 
-If you like this project, support it with a star
+If you like this project, Give a ⭐️ if you like this project!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -217,7 +218,12 @@ If you like this project, support it with a star
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank Microverse for this project
+- Thanks to everyone who will get time to check this code and sugest any [issue](https://github.com/kennedyowusu/to-do-application-webpack/issues) to improve the page.
+- Hat tip to [Microvers](www.microverse.org) and all the staff
+- Thanks to My coding Partners
+- Thanks to My Morning-session-group and Standup-team Partners and
+- Thanks to Code Reviewers
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -246,6 +252,7 @@ This project is [MIT](./LICENSE) licensed.
 _NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 - Contributing
 - Show your support
 - Acknowledgements

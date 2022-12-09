@@ -80,6 +80,14 @@ const generateUI = (taskArray) => {
       updateUserExistingTask();
     });
   });
+
+  const checkBox = document.querySelectorAll('input[type="checkbox"]');
+
+  checkBox.forEach((item) => {
+    item.addEventListener('change', () => {
+      isCheckBoxChecked(taskArray);
+    });
+  }, false);
 };
 
 const retrieveUserSavedTaskFromLocalStorage = () => {

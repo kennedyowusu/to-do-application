@@ -88,10 +88,20 @@ const generateUI = (taskArray) => {
       if (event.target.checked) {
         const checkBoxId = taskArray.findIndex((isTask) => isTask.index === parseInt(item.dataset.id, 10));
         taskArray[checkBoxId].completed = true;
+
+        const strikeLine = document.getElementById('todoDescription');
+
+        if (taskArray[checkBoxId].completed) {
+          strikeLine.style.textDecoration = 'line-through';
+        } else { strikeLine.style.textDecoration = 'none'; }
+
         saveUserTaskToLocalStorage(taskArray);
       } else {
         const checkBoxId = taskArray.findIndex((isTask) => isTask.index === parseInt(item.dataset.id, 10));
         taskArray[checkBoxId].completed = false;
+        // strike a line between the text selected
+        const strikeLine = document.getElementById('todoDescription');
+        strikeLine.style.textDecoration = 'none';
         saveUserTaskToLocalStorage(taskArray);
       }
     });

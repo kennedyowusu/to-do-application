@@ -78,6 +78,8 @@ Es6 modules
 
 - [Live Demo Link](https://yourdeployedapplicationlink.com)
 
+- [Live Video Link](https://www.loom.com/share/8b75bec713ec41f2a46569d1a6ef04e6)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->

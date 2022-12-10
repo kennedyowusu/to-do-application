@@ -14,18 +14,18 @@ const saveUserTaskToLocalStorage = (taskArray) => {
 };
 
 // Check the status of the checkbox
-const isCheckBoxChecked = (taskArray) => {
-  const checkBox = document.querySelectorAll('checkBox');
-  const checkBoxArray = Array.from(checkBox);
-  checkBoxArray.forEach((item, index) => {
-    if (item.checked) {
-      taskArray[index].completed = true;
-    } else {
-      taskArray[index].completed = false;
-    }
-  });
-  saveUserTaskToLocalStorage(taskArray);
-};
+// const isCheckBoxChecked = (taskArray) => {
+//   const checkBox = document.querySelectorAll('checkBox');
+//   const checkBoxArray = Array.from(checkBox);
+//   checkBoxArray.forEach((item, index) => {
+//     if (item.checked) {
+//       taskArray[index].completed = true;
+//     } else {
+//       taskArray[index].completed = false;
+//     }
+//   });
+//   saveUserTaskToLocalStorage(taskArray);
+// };
 
 const generateUI = (taskArray) => {
   taskTodoHolder.innerHTML = '';

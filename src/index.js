@@ -7,9 +7,25 @@ const inputTaskFormField = document.getElementById('inputTaskFormField');
 
 const taskTodoHolder = document.getElementById('taskTodoHolder');
 
+const clearAllCompleted = document.querySelector('.clear-all-completed');
+
 const saveUserTaskToLocalStorage = (taskArray) => {
   localStorage.setItem('taskArray', JSON.stringify(taskArray));
 };
+
+// Check the status of the checkbox
+// const isCheckBoxChecked = (taskArray) => {
+//   const checkBox = document.querySelectorAll('checkBox');
+//   const checkBoxArray = Array.from(checkBox);
+//   checkBoxArray.forEach((item, index) => {
+//     if (item.checked) {
+//       taskArray[index].completed = true;
+//     } else {
+//       taskArray[index].completed = false;
+//     }
+//   });
+//   saveUserTaskToLocalStorage(taskArray);
+// };
 
 const generateUI = (taskArray) => {
   taskTodoHolder.innerHTML = '';
@@ -21,7 +37,7 @@ const generateUI = (taskArray) => {
 
     const dataPlaceHolder = `
     <li class="each-todo-item">
-        <input type="checkbox">
+        <input type="checkbox" id="checkBox" class="toggle-checkbox" data-id="${index}">
         <label for="todo-item" id="todoDescription" class="input-from-user">${description}</label>
         <button type="submit" class="more_vert" data-id="${index}">
         <i class="material-icons">more_vert</i>
@@ -63,6 +79,44 @@ const generateUI = (taskArray) => {
       };
       updateUserExistingTask();
     });
+  });
+
+  const checkBox = document.querySelectorAll('.toggle-checkbox');
+
+  checkBox.forEach((item) => {
+    item.addEventListener('change', (event) => {
+      if (event.target.checked) {
+        const checkBoxId = taskArray.findIndex((isTask) => isTask.index === parseInt(item.dataset.id, 10));
+        taskArray[checkBoxId].completed = true;
+
+        const strikeLine = document.getElementById('todoDescription');
+
+        if (taskArray[checkBoxId].completed) {
+          strikeLine.style.textDecoration = 'line-through';
+        } else { strikeLine.style.textDecoration = 'none'; }
+
+        saveUserTaskToLocalStorage(taskArray);
+      } else {
+        const checkBoxId = taskArray.findIndex((isTask) => isTask.index === parseInt(item.dataset.id, 10));
+        taskArray[checkBoxId].completed = false;
+        // strike a line between the text selected
+        const strikeLine = document.getElementById('todoDescription');
+        strikeLine.style.textDecoration = 'none';
+        saveUserTaskToLocalStorage(taskArray);
+      }
+    });
+  });
+
+  // checkBox.forEach((item) => {
+  //   item.addEventListener('change', () => {
+  //     isCheckBoxChecked(taskArray);
+  //   });
+  // }, false);
+
+  clearAllCompleted.addEventListener('click', () => {
+    const completedTask = taskArray.filter((item) => item.completed === false);
+    generateUI(completedTask);
+    saveUserTaskToLocalStorage(completedTask);
   });
 };
 
